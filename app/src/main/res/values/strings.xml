@@ -91,4 +91,9 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="add_task">Add task</string>
+    <string name="text_buy">buy</string>
+    <string name="card_title">Black Friday</string>
+    <string name="text_input_hint">image URL</string>
+    <string name="helper_text_TI">required</string>
+    <string name="password_ti_hiny">Password</string>
 </resources>

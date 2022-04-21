@@ -11,6 +11,7 @@
         android:theme="@style/Theme.MDC">
         <activity
             android:name=".ScrollingActivity"
+            android:windowSoftInputMode="adjustPan"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.MDC.NoActionBar">
