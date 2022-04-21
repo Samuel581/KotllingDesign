@@ -96,4 +96,5 @@
     <string name="text_input_hint">image URL</string>
     <string name="helper_text_TI">required</string>
     <string name="password_ti_hiny">Password</string>
+    <string name="card_enable_password">Enable password</string>
 </resources>

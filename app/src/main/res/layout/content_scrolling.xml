@@ -20,6 +20,7 @@
             android:layout_marginEnd="@dimen/common_padding_min"
             android:layout_marginStart="@dimen/common_padding_min"
             android:clickable="true"
+            android:visibility="visible"
             android:focusable="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -124,6 +125,7 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
+                    android:visibility="visible"
                     />
 
                 <TextView
@@ -177,6 +179,87 @@
                         android:inputType="textPassword"
                         />
                 </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.checkbox.MaterialCheckBox
+                    android:id="@+id/cnEnablePass"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAlt"
+                    app:layout_constraintTop_toBottomOf="@id/password_text_input"
+                    android:layout_marginTop="@dimen/common_padding_default"
+                    android:text="@string/card_enable_password"
+                    />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAlt"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitleAlt"
+                    app:layout_constraintTop_toBottomOf="@id/cnEnablePass"
+                    android:background="@color/black"
+                    />
+
+                <TextView
+                    android:id="@+id/tvSubtitle"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitleAlt"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAlt"
+                    app:layout_constraintTop_toBottomOf="@id/cnEnablePass"
+                    android:text="Promotions ahead"
+                    style="?attr/textAppearanceBody1"
+                    android:layout_margin="@dimen/common_padding_default"
+                    />
+
+                <TextView
+                    android:id="@+id/tvMesageAlt"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintEnd_toEndOf="@id/tvTitleAlt"
+                    app:layout_constraintStart_toStartOf="@id/tvTitleAlt"
+                    app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+                    android:text="@string/large_text"
+                    android:maxLines="10"
+                    android:ellipsize="end"
+                    android:layout_margin="@dimen/common_padding_default"
+                    style="?attr/textAppearanceBody1"
+                    />
+
+                <com.google.android.material.button.MaterialButtonToggleGroup
+                    android:id="@+id/toogle_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/common_padding_default"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/tvMesageAlt"
+                    >
+
+                    <Button
+                        android:id="@+id/brnRed"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Red"
+                        style="?attr/materialButtonOutlinedStyle"
+                        />
+
+                    <Button
+                        android:id="@+id/brnGreen"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Green"
+                        style="?attr/materialButtonOutlinedStyle"
+                        />
+                    <Button
+                        android:id="@+id/brnBlue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Blue"
+                        style="?attr/materialButtonOutlinedStyle"
+                        />
+
+                </com.google.android.material.button.MaterialButtonToggleGroup>
 
 
 
