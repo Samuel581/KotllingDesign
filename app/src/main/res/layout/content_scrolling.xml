@@ -262,20 +262,30 @@
 
                 </com.google.android.material.button.MaterialButtonToggleGroup>
 
-                <androidx.constraintlayout.widget.ConstraintLayout>
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    </androidx.constraintlayout.widget.ConstraintLayout>
-
-
-
-
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
-
         </com.google.android.material.card.MaterialCardView>
 
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/common_padding_min"
+            android:layout_marginEnd="@dimen/common_padding_min"
+            android:layout_marginStart="@dimen/common_padding_min"
+            android:clickable="true"
+            android:focusable="true"
+            android:layout_marginBottom="100dp"
+            app:cardBackgroundColor=""
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MaterialComponents.Headline4"
+                android:textColor="@color/black"
+                android:text="Titulo"
+                />
+        </com.google.android.material.card.MaterialCardView>
 
     </LinearLayout>
 
