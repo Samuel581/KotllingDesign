@@ -16,8 +16,9 @@
         android:layout_gravity="bottom"
         app:navigationIcon="@drawable/baseline_menu"
         style="@style/Widget.MaterialComponents.BottomAppBar.Colored"
-        app:hideOnScroll="true"
+        app:hideOnScroll="false"
         app:menu="@menu/menu_scrolling"
+        app:fabAnimationMode="slide"
         />
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
